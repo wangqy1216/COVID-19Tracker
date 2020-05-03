@@ -5,7 +5,8 @@ import { Line, Bar } from 'react-chartjs-2';
 import styles from './Chart.module.css';
 
 const Chart = ( { data : { confirmed, deaths, recovered }, country }) => {
-const [ dailyData, setDailyData ] = useState([]);
+    
+    const [ dailyData, setDailyData ] = useState([]);
 
     useEffect(() => {
         const fetchAPI = async () => {
@@ -35,8 +36,6 @@ const [ dailyData, setDailyData ] = useState([]);
                 }}
             />) : null
     );
-
-    console.log(confirmed, recovered, deaths);
 
     const barChart = (
         confirmed
