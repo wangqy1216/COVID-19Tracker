@@ -4,6 +4,8 @@ import { Cards, Chart, CountryPicker } from './components';
 import styles from './App.module.css';
 import { fetchData, fetchDailyData } from './api';
 
+import WebMap from './components/WebMap/WebMap';
+
 class App extends React.Component {
     state = {
         data: {},
@@ -40,6 +42,9 @@ class App extends React.Component {
                 <Cards data = { this.state.data }/>
                 <CountryPicker handleCountryChange={this.handleCountryChange}/>
                 <Chart data={data} country={country}/>
+                <div className="test" style={{width: 500, height: 500}} >
+                    <WebMap />
+                </div>
             </div>
         )
     }
