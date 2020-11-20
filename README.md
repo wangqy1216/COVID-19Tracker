@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-[Demo](http://github.com/wangqy1216/covid_19tracker/master/demo.htm)
+[Demo](http://wangqy1216.github.io/covid-19tracker/demo.htm)
 
 ## Available Scripts
 
